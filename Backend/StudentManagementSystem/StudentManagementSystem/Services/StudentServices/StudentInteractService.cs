@@ -7,9 +7,9 @@ namespace StudentManagementSystem.Services.StudentServices
     public class StudentInteractService : IStudentInteractService
     {
         private readonly DataContext context;
-        private readonly StudentService studentService;
+        private readonly IStudentService studentService;
 
-        public StudentInteractService(DataContext _context, StudentService _studentService)
+        public StudentInteractService(DataContext _context, IStudentService _studentService)
         {
             context = _context;
             studentService = _studentService;
